@@ -146,7 +146,7 @@ def gen_uri(servers):
                 ])
                 ssr_decoded += '/?remarks={remarks}&group={group}'.format(
                     remarks=encode(server['remarks']),
-                    group=encode("Charles Xu"),
+                    group=encode("rea11y"),
                 )
 
                 ssr_uri = 'ssr://{endoced}'.format(
