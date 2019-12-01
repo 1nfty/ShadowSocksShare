@@ -16,15 +16,15 @@ url = [
 ]
 
 subscriptions = [
+    'https://haobang.yangwang.workers.dev',
+    'https://raw.githubusercontent.com/voken100g/AutoSSR/master/stable',
+    'https://raw.githubusercontent.com/voken100g/AutoSSR/master/online',
+    'https://raw.githubusercontent.com/voken100g/AutoSSR/master/recent',
     'https://muma16fx.netlify.com/',
     'https://qiaomenzhuanfx.netlify.com/',
     'https://raw.githubusercontent.com/eycorsican/rule-sets/master/kitsunebi_sub',
     'https://raw.githubusercontent.com/ssrsub/ssr/master/ssrsub',
-    'https://raw.githubusercontent.com/voken100g/AutoSSR/master/online',
-    'https://raw.githubusercontent.com/voken100g/AutoSSR/master/recent',
-    'https://raw.githubusercontent.com/voken100g/AutoSSR/master/stable',
     'https://teleplusfreessr.000webhostapp.com/',
     'https://www.liesauer.net/yogurt/subscribe?ACCESS_TOKEN=DAYxR3mMaZAsaqUb',
-    'https://haobang.yangwang.workers.dev',
     'https://raw.githubusercontent.com/fggfffgbg/https-aishangyou.tube-/master/README.md'
 ]
