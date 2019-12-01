@@ -106,7 +106,7 @@ def gen_uri(servers):
                 "obfs_param": "",
                 "fast_open": False,
                 "workers": 1,
-                "group": "ss.pythonic.life"
+                "group": "rea11y.best"
             },'''
 
     result_servers = list()
@@ -146,7 +146,7 @@ def gen_uri(servers):
                 ])
                 ssr_decoded += '/?remarks={remarks}&group={group}'.format(
                     remarks=encode(server['remarks']),
-                    group=encode("Charles Xu"),
+                    group=encode("rea11y.best"),
                 )
 
                 ssr_uri = 'ssr://{endoced}'.format(
@@ -163,7 +163,7 @@ def gen_uri(servers):
                     encode(server['password'])
                 ]])
                 appendix = [(key, server[key]) for key in ['obfsparam', 'protoparam', 'remarks'] if key in server]
-                appendix.append(('group', 'Charles Xu'))
+                appendix.append(('group', 'really.best'))
                 appendix_str = '&'.join(['{key}={val}'.format(
                     key=item[0],
                     val=encode(item[1])
@@ -184,7 +184,7 @@ def gen_uri(servers):
                 "local_address": "127.0.0.1",
                 "local_port": 1080,
                 "password": server['password'],
-                "group": "Charles Xu"
+                "group": "rea11y.best"
             }
             if 'ssr_protocol' in server:
                 server['protocol'] = server['ssr_protocol']
