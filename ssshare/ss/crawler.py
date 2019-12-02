@@ -17,7 +17,7 @@
     "obfs_param": "",
     "fast_open": False,
     "workers": 1,
-    "group": "ss.pythonic.life"
+    "group": "share.rea11y.best"
 }
 """
 from ast import literal_eval
@@ -83,7 +83,7 @@ def request_subscription(url, headers=fake_ua, name='ssr 订阅源'):
     return servers, info
 
 
-def crawl_sstool(url='https://www.ssrtool.com/', headers=fake_ua):
+def crawl_sstool(url='https://ssrtool.us/tool/share_ssr', headers=fake_ua):
     api_url = [url + i for i in [
         'tool/api/free_ssr?page=1&limit=10',
         'tool/api/free_ssr?page=2&limit=10',
@@ -95,7 +95,7 @@ def crawl_sstool(url='https://www.ssrtool.com/', headers=fake_ua):
         'tool/api/free_ssr?page=8&limit=10',
         'tool/api/free_ssr?page=9&limit=10',
         'tool/api/free_ssr?page=10&limit=10',
-
+        
         'tool/api/share_ssr?page=1&limit=10',
         'tool/api/share_ssr?page=2&limit=10',
         'tool/api/share_ssr?page=3&limit=10',
