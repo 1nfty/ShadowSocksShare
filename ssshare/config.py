@@ -4,6 +4,8 @@ url = [
     'https://lncn.org/',
     'https://www.youneed.win/free-ss',
     'https://www.youneed.win/free-ssr',
+    'https://www.youneed.win/free-ssr/2',
+    'https://www.youneed.win/free-ssr/3',
     'https://fanqiang.network/',
     'https://fanqiang.network/free-shadowsocksr-accounts-page-2',
     'https://fanqiang.network/free-shadowsocksr-accounts-page-3',
