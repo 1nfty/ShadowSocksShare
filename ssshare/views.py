@@ -15,11 +15,11 @@ from apscheduler.schedulers.background import BackgroundScheduler
 
 
 # Config for disqus comment board
-DOMAIN = 'http://ss.pythonic.life'
+DOMAIN = 'http://share.rea11y.best'
 DISQUS_IDENTIFIER = 'shadowsocksshare'
 
 
-servers = [{'data': [], 'info': {'message': '别着急，正在爬数据，半小时后再回来吧：）', 'url': 'http://share.rea11y.best/', 'name': 'ShadowSocks 帐号分享'}}]
+servers = [{'data': [], 'info': {'message': '别着急，正在爬数据，半小时后再回来吧：）', 'url': 'http://share.rea11y.best', 'name': 'ShadowSocks 帐号分享'}}]
 curtime = time.ctime()
 
 encoded = ''
