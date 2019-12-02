@@ -132,7 +132,7 @@ def gen_uri(servers):
                 )
                 ss_uri = 'ss://{}#{}'.format(
                     str(base64.urlsafe_b64encode(bytes(decoded, encoding='utf8')), encoding='utf-8'),
-                    urllib.parse.quote("rea11y.best")
+                    urllib.parse.quote(server['remarks'])
                 )
 
                 # ssr formatted account info
@@ -145,7 +145,7 @@ def gen_uri(servers):
                     encode(server['password']),
                 ])
                 ssr_decoded += '/?remarks={remarks}&group={group}'.format(
-                    remarks=encode("rea11y.best"),
+                    remarks=encode(server['remarks']),
                     group=encode("rea11y.best"),
                 )
 
