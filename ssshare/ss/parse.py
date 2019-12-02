@@ -41,7 +41,7 @@ def parse(uri, default_title='untitled'):
             stripped, remarks = stripped.split('#')[:2]
             server['remarks'] = urllib.parse.unquote(remarks)
         else:
-            server['remarks'] = default_title
+            server['remarks'] += 'SSR'
         decoded = decode(stripped)
         data = decoded.split('@', maxsplit=1)
         server['method'], server['password'] = data[0].split(':', maxsplit=1)
@@ -59,14 +59,14 @@ def parse(uri, default_title='untitled'):
             password_enc,
         ] = data[0].rsplit(':', maxsplit=5)
         server['password'] = decode(password_enc)
-        server['remarks'] = default_title
+        server['remarks'] += 'SSR'
         if len(data) > 1:
             appendix = data[1].split('&')
             content = {i.split('=')[0]: i.split('=')[1] for i in appendix}
             for key in content:
                 server[key] = decode(content[key])
         if server['ssr_protocol'] != 'origin' and server['obfs'] != 'plain':
-            server['remarks'] += ' SSR'
+            server['remarks'] += 'SSR'
     return server
 
 
