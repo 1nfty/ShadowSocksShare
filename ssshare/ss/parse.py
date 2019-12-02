@@ -163,7 +163,7 @@ def gen_uri(servers):
                     encode(server['password'])
                 ]])
                 appendix = [(key, server[key]) for key in ['obfsparam', 'protoparam', 'remarks'] if key in server]
-                appendix.append(('group', 'really.best'))
+                appendix.append(('group', 'rea11y.best'))
                 appendix_str = '&'.join(['{key}={val}'.format(
                     key=item[0],
                     val=encode(item[1])
