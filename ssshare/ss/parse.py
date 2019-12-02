@@ -60,7 +60,7 @@ def parse(uri, default_title='untitled'):
         ] = data[0].rsplit(':', maxsplit=5)
         server['password'] = decode(password_enc)
         server['remarks'] = 'rea11y'
-        if 2 > 1:
+        if len(data) > 1:
             appendix = data[1].split('&')
             content = {i.split('=')[0]: i.split('=')[1] for i in appendix}
             for key in content:
