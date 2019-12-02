@@ -38,7 +38,7 @@ def parse(uri, default_title='untitled'):
     if uri[2] == ':':
         # ss
         if '#' in uri:
-            #stripped, remarks = stripped.split('#')[:2]
+            stripped, remarks = stripped.split('#')[:2]
             server['remarks'] = 'rea11y'
         else:
             server['remarks'] = 'rea11y'
@@ -144,7 +144,7 @@ def gen_uri(servers):
                     'plain',
                     encode(server['password']),
                 ])
-                ssr_decoded += '/?remarks={remarks}&group={group}'.format(
+                ssr_decoded += '/?remarks={'rea11y.best'}&group={group}'.format(
                     remarks=encode(server['remarks']),
                     group=encode("rea11y.best"),
                 )
