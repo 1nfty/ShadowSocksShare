@@ -11,6 +11,7 @@ url = [
     'https://t.me/s/SSRSUB',
     'https://t.me/s/SSRlist',
     'https://t.me/s/ssrshares',
+    'https://t.me/s/FreeSSRNode',
     'https://www.attackmen.com/',
     'https://ssrtool.us/tool/share_ssr',
 ]
