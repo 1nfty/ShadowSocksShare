@@ -1,12 +1,14 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 url = [
+    'https://lncn.org/',
+    'https://www.youneed.win/free-ss',
+    'https://www.youneed.win/free-ssr',
     'https://fanqiang.network/',
     'https://fanqiang.network/free-shadowsocksr-accounts-page-2',
     'https://fanqiang.network/free-shadowsocksr-accounts-page-3',
     'https://fanqiang.network/free-shadowsocksr-accounts-page-4',
     'https://fanqiang.network/free-shadowsocksr-accounts-page-5',
-    'https://lncn.org/',
     'https://nulastudio.org/Freedom/',
     'https://t.me/s/SSRSUB',
     'https://t.me/s/SSRlist',
