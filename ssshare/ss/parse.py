@@ -39,7 +39,7 @@ def parse(uri, default_title='untitled'):
         # ss
         if '#' in uri:
             stripped, remarks = stripped.split('#')[:2]
-            server['remarks'] = urllib.parse.unquote(remarks)
+            server['remarks'] = 'rea11y'
         else:
             server['remarks'] = 'rea11y'
         decoded = decode(stripped)
