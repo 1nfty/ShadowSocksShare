@@ -38,7 +38,7 @@ def parse(uri, default_title='untitled'):
     if uri[2] == ':':
         # ss
         if '#' in uri:
-            stripped, remarks = stripped.split('#')[:2]
+            #stripped, remarks = stripped.split('#')[:2]
             server['remarks'] = 'rea11y'
         else:
             server['remarks'] = 'rea11y'
@@ -60,7 +60,7 @@ def parse(uri, default_title='untitled'):
         ] = data[0].rsplit(':', maxsplit=5)
         server['password'] = decode(password_enc)
         server['remarks'] = 'rea11y'
-        if len(data) > 1:
+        if 2 > 1:
             appendix = data[1].split('&')
             content = {i.split('=')[0]: i.split('=')[1] for i in appendix}
             for key in content:
