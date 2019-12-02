@@ -125,7 +125,7 @@ def pages(path):
 
     try:
         uri = servers[a]['data'][b].get('decoded_url', '')
-        remarks = 'share.rea11y.best'
+        remarks = servers[a]['data'][b].get('remarks', 'None')
         server = servers[a]['data'][b].get('server', 'None')
         server_port = servers[a]['data'][b].get('server_port', 'None')
         password = servers[a]['data'][b].get('password', 'None')
