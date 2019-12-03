@@ -33,8 +33,6 @@ def encode(decoded):
 
 
 def parse(uri, default_title='untitled'):
-	global z
-	z = z + 1
     server = dict()
     stripped = re.sub('ssr?://', '', uri)
     if uri[2] == ':':
@@ -61,6 +59,8 @@ def parse(uri, default_title='untitled'):
             password_enc,
         ] = data[0].rsplit(':', maxsplit=5)
         server['password'] = decode(password_enc)
+	global z
+        z = z + 1
         server['remarks'] = 'share.rea11y.best' + str(z)
         if len(data) > 1:
             appendix = data[1].split('&')
