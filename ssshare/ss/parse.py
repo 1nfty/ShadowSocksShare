@@ -39,9 +39,9 @@ def parse(uri, default_title='untitled'):
         # ss
         if '#' in uri:
             stripped, remarks = stripped.split('#')[:2]
-            server['remarks'] = 'rea11y'
+            server['remarks'] = 'share.rea11y.best'
         else:
-            server['remarks'] = 'rea11y'
+            server['remarks'] = 'share.rea11y.best'
         decoded = decode(stripped)
         data = decoded.split('@', maxsplit=1)
         server['method'], server['password'] = data[0].split(':', maxsplit=1)
@@ -59,14 +59,14 @@ def parse(uri, default_title='untitled'):
             password_enc,
         ] = data[0].rsplit(':', maxsplit=5)
         server['password'] = decode(password_enc)
-        server['remarks'] = 'rea11y'
+        server['remarks'] = 'share.rea11y.best'
         if len(data) > 1:
             appendix = data[1].split('&')
             content = {i.split('=')[0]: i.split('=')[1] for i in appendix}
             for key in content:
-                server[key] = decode(content[key])
+                server['remarks'] = 'share.rea11y.best'
         if server['ssr_protocol'] != 'origin' and server['obfs'] != 'plain':
-            server['remarks'] = 'rea11y'
+            server['remarks'] = 'share.rea11y.best'
     return server
 
 
@@ -145,7 +145,7 @@ def gen_uri(servers):
                     encode(server['password']),
                 ])
                 ssr_decoded += '/?remarks={remarks}&group={group}'.format(
-                    remarks=encode("rea11y.best"),
+                    remarks=encode("share.rea11y.best"),
                     group=encode("rea11y.best"),
                 )
 
