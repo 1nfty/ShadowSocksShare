@@ -144,7 +144,7 @@ def gen_uri(servers):
                     'plain',
                     encode(server['password']),
                 ])
-                  ssr_decoded += '/?remarks={remarks}&group={group}'.format(
+                ssr_decoded += '/?remarks={remarks}&group={group}'.format(
                     remarks=encode(server['remarks']),
                     group=encode("rea11y.best"),
                 )
