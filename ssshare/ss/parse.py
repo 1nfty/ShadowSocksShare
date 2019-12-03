@@ -39,9 +39,9 @@ def parse(uri, default_title='untitled'):
         # ss
         if '#' in uri:
             stripped, remarks = stripped.split('#')[:2]
-            server['remarks'] = 'rea11y'
+            server['remarks'] = 'share.rea11y.best'
         else:
-            server['remarks'] = 'rea11y'
+            server['remarks'] = 'share.rea11y.best'
         decoded = decode(stripped)
         data = decoded.split('@', maxsplit=1)
         server['method'], server['password'] = data[0].split(':', maxsplit=1)
@@ -61,11 +61,11 @@ def parse(uri, default_title='untitled'):
         server['password'] = decode(password_enc)
         global z
         z = z + 1
-        server['remarks'] = 'rea11y' + str(z)
+        server['remarks'] = 'share.rea11y.best' + str(z)
         if len(data) > 1:
-            server['remarks'] = 'rea11y' + str(z)
+            server['remarks'] = 'share.rea11y.best' + str(z)
         if server['ssr_protocol'] != 'origin' and server['obfs'] != 'plain':
-            server['remarks'] = 'rea11y' + str(z)
+            server['remarks'] = 'share.rea11y.best' + str(z)
     return server
 
 
