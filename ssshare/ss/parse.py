@@ -11,7 +11,7 @@ import urllib
 import json
 import logging
 
-
+z = 0
 scanner = zbar.Scanner()
 
 
@@ -33,15 +33,17 @@ def encode(decoded):
 
 
 def parse(uri, default_title='untitled'):
+	global z
+	z = z + 1
     server = dict()
     stripped = re.sub('ssr?://', '', uri)
     if uri[2] == ':':
         # ss
         if '#' in uri:
             stripped, remarks = stripped.split('#')[:2]
-            server['remarks'] = 'share.rea11y.best'
+            server['remarks'] = 'share.rea11y.best' + str(z)
         else:
-            server['remarks'] = 'share.rea11y.best'
+            server['remarks'] = 'share.rea11y.best' + str(z)
         decoded = decode(stripped)
         data = decoded.split('@', maxsplit=1)
         server['method'], server['password'] = data[0].split(':', maxsplit=1)
@@ -59,14 +61,14 @@ def parse(uri, default_title='untitled'):
             password_enc,
         ] = data[0].rsplit(':', maxsplit=5)
         server['password'] = decode(password_enc)
-        server['remarks'] = 'share.rea11y.best'
+        server['remarks'] = 'share.rea11y.best' + str(z)
         if len(data) > 1:
             appendix = data[1].split('&')
             content = {i.split('=')[0]: i.split('=')[1] for i in appendix}
             for key in content:
-                server['remarks'] = 'share.rea11y.best'
+                server['remarks'] = 'share.rea11y.best' + str(z)
         if server['ssr_protocol'] != 'origin' and server['obfs'] != 'plain':
-            server['remarks'] = 'share.rea11y.best'
+            server['remarks'] = 'share.rea11y.best' + str(z)
     return server
 
 
