@@ -2,6 +2,12 @@
 # -*- coding: utf-8 -*-
 url = [
     'https://nulastudio.org/Freedom/',
+    'https://fx.tmioe.com/freessr',
+    'https://my.freess.info/',
+    'https://get.ishadowx.biz/',
+    'https://en.ss8.tech/',
+    'https://tz.qwq.cc/ssrlinks.txt',
+    'https://fx.tmioe.com/freessr',
     'https://www.attackmen.com/',
     'https://ssrtool.us/tool/share_ssr',
     'https://lncn.org/',
